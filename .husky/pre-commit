@@ -1,0 +1,4 @@
+echo '#!/bin/sh
+. "$(dirname)"_husky.sh"
+
+npm run quality' > .husky/pre-commit
