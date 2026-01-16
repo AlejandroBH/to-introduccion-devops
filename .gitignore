@@ -1,1 +1,105 @@
-node_modules
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+/.nyc_output
+*.lcov
+.jest-cache/
+
+# Next.js
+/.next/
+/out/
+/build
+
+# Production
+/dist
+
+# Misc
+.DS_Store
+*.pem
+Thumbs.db
+desktop.ini
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# Local env files - IMPORTANTE: nunca subir archivos .env
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.backup
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE y Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Cypress
+/cypress/videos
+/cypress/screenshots
+/cypress/downloads
+
+# Docker
+docker-compose.override.yml
+*.log
+
+# Cache directories
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Temporary files
+*.tmp
+*.temp
+.temp/
+.tmp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Sensitive data
+secrets.json
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+
+# Build artifacts
+*.tgz
+*.zip
+*.tar.gz

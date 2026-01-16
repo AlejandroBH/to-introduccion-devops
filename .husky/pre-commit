@@ -1,4 +1,4 @@
-echo '#!/bin/sh
-. "$(dirname)"_husky.sh"
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
 
-npm run quality' > .husky/pre-commit
+npx lint-staged

@@ -10,17 +10,47 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "test": "jest",
+    "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --watchAll=false",
     "test:e2e": "cypress run",
+    "test:e2e:open": "cypress open",
     "quality": "npm run lint && npm run test:coverage && npm run build",
-    "prepare": "husky"
+    "prepare": "husky",
+    "docker:build": "docker build -t introduccion-devops .",
+    "docker:run": "docker run -p 3000:3000 introduccion-devops"
   },
-  "keywords": [],
+  "keywords": [
+    "devops",
+    "ci-cd",
+    "docker",
+    "github-actions",
+    "nextjs"
+  ],
   "author": "Alejandro Barrera <alejandro91dark@hotmail.es>",
   "license": "ISC",
-  "type": "commonjs",
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@types/node": "^20.10.6",
+    "@types/react": "^18.2.46",
+    "cypress": "^13.6.2",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.2.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7"
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
   }
 }
